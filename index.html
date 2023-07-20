@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+    <base href="/">
+    <base href="/">
+  -->
+  <base href="/">
+  <meta name="google-signin-client_id" content="834378631815-e6rgfde3sbkggjsg3sk9r02d0mvj6ld9.apps.googleusercontent.com">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Bottom Street">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Bottom Street</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script src="./assets/packages/mixpanel_flutter/assets/mixpanel.js"></script>
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = "370589755";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <style>
+    .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.progress-bar__container {
+  width: 30%;
+  height: 0.3rem;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  will-change: transform;
+  background-color: #433B3B;
+  /* box-shadow: 0 0 5px #007aff; */
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #007aff;
+  top:0;
+  bottom: 0;
+  left: -100%;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.indicator {
+  /* Your indicator styles here */
+  padding: 20px; /* Adjust the value as needed */
+}
+
+.progress-bar__text {
+  display: none;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body style="overflow: hidden; background: #000000;">
+  <div id="loading_indicator" class="container">
+    <img class="indicator" src="./assets/bottomStreet.svg" width="50" height="50"/>
+    <div class="progress-bar__container">
+      <div class="progress-bar">
+        <!-- <span class="progress-bar__text">Uploaded Successfully!</span> -->
+      </div>
+    </div>
+    <p style="color: #D9D9D9;font-size: 15px;">"The stock market is filled with individuals who know the price of everything, but the value of nothing."</p>
+    <p style="color: #D9D9D9;font-size: 15px;">- Philip Fisher</p>
+  </div>
+  <script>
+    function updateProgress(num) {
+  const progressBarContainer = document.querySelector('.progress-bar__container');
+  const progressBar = document.querySelector('.progress-bar');
+  // const progressBarText = document.querySelector('.progress-bar__text');
+
+  let time = 0;
+  let endState = 100;
+
+  gsap.to(progressBar, {
+    x: num + "%",
+    duration: 2,
+  });
+}
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      updateProgress(20);
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(async function (appRunner) {
+            updateProgress(60);
+            await appRunner.runApp();
+            updateProgress(100);
+          });
+        }
+      });
+    });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAvuMpqE1Ft-ctI-aaRKKa_OtLIhW-rXps",
+      authDomain: "bottom-street.firebaseapp.com",
+      databaseURL: "https://bottom-street-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "bottom-street",
+      storageBucket: "bottom-street.appspot.com",
+      messagingSenderId: "834378631815",
+      appId: "1:834378631815:web:9c5ad46f64cfd9cdc10622",
+      measurementId: "G-Z1RDVQTKTV"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script>
+    window.onload = function () {
+        setTimeout(function () {
+          var loadingIndicator = document.getElementById("loading_indicator");
+          if (loadingIndicator) {
+            loadingIndicator.remove();
+          }
+        }, 10000);
+};
+  </script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+[
+{
+"no" : 0,
+"secid" : 14801,
+"listing_id" : 17490,
+"security_name" : "Nifty 50" 
+},
+{
+"no" : 1,
+"secid" : 14796,
+"listing_id" : 17483,
+"security_name" : "Nifty Bank" 
+},
+{
+"no" : 2,
+"secid" : 16061,
+"listing_id" : 19230,
+"security_name" : "NIFTY Midcap 100" 
+},
+{
+"no" : 3,
+"secid" : 16062,
+"listing_id" : 19231,
+"security_name" : "NIFTY Smallcap 100" 
+},
+{
+"no" : 4,
+"secid" : 14802,
+"listing_id" : 17492,
+"security_name" : "India VIX" 
+},
+{
+"no" : 5,
+"secid" : 14798,
+"listing_id" : 17485,
+"security_name" : "Nifty IT" 
+},
+{
+"no" : 6,
+"secid" : 14820,
+"listing_id" : 17507,
+"security_name" : "Nifty Pharma" 
+},
+{
+"no" : 7,
+"secid" : 14821,
+"listing_id" : 17508,
+"security_name" : "Nifty PSU Bank" 
+},
+{
+"no" : 8,
+"secid" : 14799,
+"listing_id" : 17486,
+"security_name" : "Nifty PSE" 
+},
+{
+"no" : 9,
+"secid" : 14835,
+"listing_id" : 17522,
+"security_name" : "Nifty CPSE" 
+},
+{
+"no" : 10,
+"secid" : 14822,
+"listing_id" : 17509,
+"security_name" : "Nifty Realty" 
+},
+{
+"no" : 11,
+"secid" : 14813,
+"listing_id" : 17500,
+"security_name" : "Nifty Auto" 
+},
+{
+"no" : 12,
+"secid" : 14816,
+"listing_id" : 17503,
+"security_name" : "Nifty FMCG" 
+},
+{
+"no" : 13,
+"secid" : 14814,
+"listing_id" : 17501,
+"security_name" : "Nifty Energy" 
+},
+{
+"no" : 14,
+"secid" : 14797,
+"listing_id" : 17484,
+"security_name" : "Nifty Infrastructure" 
+},
+{
+"no" : 15,
+"secid" : 14818,
+"listing_id" : 17505,
+"security_name" : "Nifty Metal" 
+},
+{
+"no" : 16,
+"secid" : 14809,
+"listing_id" : 17496,
+"security_name" : "Nifty 500" 
+},
+{
+"no" : 17,
+"secid" : 14806,
+"listing_id" : 17493,
+"security_name" : "Nifty Next 50" 
+},
+{
+"no" : 18,
+"secid" : 14817,
+"listing_id" : 17504,
+"security_name" : "Nifty Media" 
+},
+{
+"no" : 19,
+"secid" : 71118,
+"listing_id" : 68419,
+"security_name" : "S&P Bse Sensex" 
+},
+{
+"no" : 20,
+"secid" : 71121,
+"listing_id" : 68422,
+"security_name" : "S&P Bse 500" 
+},
+{
+"no" : 21,
+"secid" : 77349,
+"listing_id" : 71317,
+"security_name" : "S&P BSE LargeCap" 
+},
+{
+"no" : 22,
+"secid" : 71135,
+"listing_id" : 68436,
+"security_name" : "S&P Bse Midcap" 
+},
+{
+"no" : 23,
+"secid" : 71131,
+"listing_id" : 68432,
+"security_name" : "S&P Bse Bankex" 
+},
+{
+"no" : 24,
+"secid" : 71129,
+"listing_id" : 68430,
+"security_name" : "BSE - PSU" 
+},
+{
+"no" : 25,
+"secid" : 81231,
+"listing_id" : 73727,
+"security_name" : "S&P CPSE" 
+},
+{
+"no" : 26,
+"secid" : 71122,
+"listing_id" : 68423,
+"security_name" : "S&P Bse Information Technology" 
+},
+{
+"no" : 27,
+"secid" : 71126,
+"listing_id" : 68427,
+"security_name" : "S&P Bse Healthcare" 
+},
+{
+"no" : 28,
+"secid" : 71138,
+"listing_id" : 68439,
+"security_name" : "S&P Bse Realty" 
+},
+{
+"no" : 29,
+"secid" : 81230,
+"listing_id" : 73726,
+"security_name" : "S&P BSE India Infrastructure Index" 
+},
+{
+"no" : 30,
+"secid" : 71132,
+"listing_id" : 68433,
+"security_name" : "S&P Bse Auto" 
+},
+{
+"no" : 31,
+"secid" : 71123,
+"listing_id" : 68424,
+"security_name" : "S&P Bse Fast Moving Consumer Goods" 
+},
+{
+"no" : 32,
+"secid" : 77345,
+"listing_id" : 71313,
+"security_name" : "S&P BSE Energy" 
+},
+{
+"no" : 33,
+"secid" : 71139,
+"listing_id" : 68440,
+"security_name" : "S&P Bse Power" 
+},
+{
+"no" : 34,
+"secid" : 71134,
+"listing_id" : 68435,
+"security_name" : "S&P Bse Oil & Gas" 
+},
+{
+"no" : 35,
+"secid" : 71133,
+"listing_id" : 68434,
+"security_name" : "S&P Bse Metal" 
+},
+{
+"no" : 36,
+"secid" : 71124,
+"listing_id" : 68425,
+"security_name" : "S&P Bse Capital Goods" 
+},
+{
+"no" : 37,
+"secid" : 77346,
+"listing_id" : 71314,
+"security_name" : "S&P BSE Telecommunication" 
+},
+{
+"no" : 38,
+"secid" : 71125,
+"listing_id" : 68426,
+"security_name" : "S&P Bse Consumer Durables" 
+},
+{
+"no" : 39,
+"secid" : 77347,
+"listing_id" : 71315,
+"security_name" : "S&P BSE Utilities" 
+},
+{
+"no" : 40,
+"secid" : 77344,
+"listing_id" : 71312,
+"security_name" : "S&P BSE Industrials" 
+},
+{
+"no" : 41,
+"secid" : 77341,
+"listing_id" : 71309,
+"security_name" : "S&P BSE Financial Services" 
+},
+{
+"no" : 42,
+"secid" : 77339,
+"listing_id" : 71307,
+"security_name" : "S&P BSE Commodities" 
+},
+{
+"no" : 43,
+"secid" : 72576,
+"listing_id" : 69149,
+"security_name" : "S&P Bse Carbonex" 
+}
+,
+{
+"no" : 44,
+"secid" : 71702,
+"listing_id" : 68618,
+"security_name" : "S&P Bse Greenex" 
+},
+{
+    "no" : 45,
+    "secid" : 71702,
+    "listing_id" : 17502,
+    "security_name" : "Nifty Fin Service"
+    }
+]
